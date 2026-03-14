@@ -1,0 +1,106 @@
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)">
+    
+    <!-- wp:html -->
+    <style>
+        .medical-404-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 60vh;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #f0f9ff 0%, #ffffff 100%);
+            border-radius: 24px;
+            padding: 4rem 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+            border: 2px solid #bae6fd;
+        }
+        .medical-emoji-group {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            /* A subtle heartbeat animation for the medical theme */
+            animation: heartbeat 1.5s infinite;
+        }
+        .medical-404-heading {
+            font-size: 8rem;
+            font-weight: 900;
+            color: #0284c7; /* Medical Blue */
+            margin: 0;
+            line-height: 1;
+            letter-spacing: -0.05em;
+        }
+        .medical-404-subheading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 1rem 0;
+        }
+        .medical-404-text {
+            font-size: 1.125rem;
+            color: #475569;
+            max-width: 550px;
+            margin: 0 auto 2.5rem auto;
+            line-height: 1.7;
+        }
+        .medical-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0ea5e9;
+            color: #ffffff !important;
+            text-decoration: none;
+            font-size: 1.125rem;
+            font-weight: 600;
+            padding: 1rem 2.5rem;
+            border-radius: 9999px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px -1px rgba(14, 165, 233, 0.3);
+        }
+        .medical-btn:hover {
+            background-color: #0284c7;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(14, 165, 233, 0.4);
+        }
+        .medical-btn-icon {
+            margin-right: 0.5rem;
+            font-size: 1.5rem;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.1); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.1); }
+            70% { transform: scale(1); }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 640px) {
+            .medical-404-wrapper { padding: 3rem 1.5rem; }
+            .medical-404-heading { font-size: 6rem; }
+            .medical-404-subheading { font-size: 1.75rem; }
+            .medical-emoji-group { font-size: 4rem; }
+        }
+    </style>
+
+    <div class="medical-404-wrapper">
+        <div class="medical-emoji-group">
+            🤕 🩺 💊
+        </div>
+        <h1 class="medical-404-heading">404</h1>
+        <h2 class="medical-404-subheading">Diagnosis: Page Not Found</h2>
+        <p class="medical-404-text">
+            Oops! It looks like this page took a sick day. We couldn't find the prescription for the link you followed, but we can help nurse you back to the right place.
+        </p>
+        <a href="/" class="medical-btn">
+            <span class="medical-btn-icon">🚑</span> Return to Homepage
+        </a>
+    </div>
+    <!-- /wp:html -->
+
+</main>
+<!-- /wp:group -->
